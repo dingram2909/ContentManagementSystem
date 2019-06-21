@@ -1,0 +1,9 @@
+    {%if errmessage is defined %}
+	<p class="jumbotron"><span class="text-danger">{{eraw is defined ? errmessage|raw : errmessage}}</span></p>
+    {% endif %}
+    {%if warnmessage is defined %}
+	<p class="jumbotron text-warn"><span class="text-warn">{{wraw is defined ? warnmessage|raw : warnmessage}}</span></p>
+    {% endif %}
+    {%if message is defined %}
+	<p class="jumbotron">{{mraw is defined ? message|raw : message}}</p>
+    {% endif %}
